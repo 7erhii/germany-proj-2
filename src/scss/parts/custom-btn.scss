@@ -1,0 +1,24 @@
+.custom-btn {
+  background: $lightBlue;
+  border: 1px solid $gold;
+  border-radius: 50px;
+  padding: em(18) em(18);
+  text-align: center;
+  cursor: pointer;
+  span {
+    color: $gold;
+  }
+  &--lagre {
+    span {
+      @include OpenSans300;
+      font-size: em(22);
+
+    }
+  }
+  &:hover {
+  background: $lightBlueHover;
+
+  }
+}
+
+

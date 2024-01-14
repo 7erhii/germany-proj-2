@@ -1,0 +1,21 @@
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/src/assets/images/main-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: em(1180);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+#ui-datepicker-div {
+  display:  none;
+}

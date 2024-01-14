@@ -1,0 +1,295 @@
+.content {
+  display: flex;
+  position: relative;
+  // flex-direction: column;
+  gap: em(50);
+  align-items: center;
+  justify-content: center;
+  // max-width: 50%;
+
+  &__title {
+    padding: em(40) 0 em(20);
+    span {
+      @include Serif400;
+      font-size: em(38);
+
+      background: linear-gradient(
+        180deg,
+        rgb(229, 209, 120) 35%,
+        rgba(112, 93, 59, 1) 100%
+      );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+      text-align: center;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: em(20);
+    color: $gold;
+    padding-right: em(80);
+  }
+  &__form {
+    input.custom-input {
+      background: $lightBlue;
+    }
+  }
+
+  &__form-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: em(10);
+
+    span {
+      @include OpenSans300;
+      font-size: em(20);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__card-title {
+    display: flex;
+    align-items: center;
+    gap: em(20);
+    width: 100%;
+    background: $lightBlue;
+    border-radius: 8px;
+    padding: em(12) em(20);
+  }
+  &__card-title-image {
+    svg {
+      max-width: em(46);
+      max-height: em(46);
+    }
+    img {
+      max-width: em(46);
+      max-height: em(46);
+    }
+  }
+  &__card-item {
+    display: flex;
+    width: 100%;
+    background: $darkBlue;
+    border-radius: 6px;
+    border: 1px solid #0f1344;
+    padding: em(20) em(30);
+    gap: em(30);
+    align-items: center;
+  }
+
+  &__card-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: em(10);
+  }
+  &__card-item-text-title {
+    span {
+      @include OpenSans300;
+      font-size: em(22);
+
+      background-image: linear-gradient(
+        180deg,
+        rgb(229, 209, 120) 35%,
+        rgba(112, 93, 59, 1) 100%
+      );
+
+      -webkit-background-clip: text;
+
+      color: transparent;
+    }
+  }
+  &__card-item-text-subtitle {
+    span {
+      @include OpenSans300;
+      font-size: em(20);
+      color: #28438d;
+    }
+  }
+  &__card-title-points {
+    span {
+      @include OpenSans300;
+      font-size: em(18);
+    }
+  }
+  &__card-item-text {
+    width: 100%;
+  }
+
+  &__actions {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: em(10);
+  }
+  &__actions-icon {
+    padding-left: em(30);
+    svg {
+      max-width: em(46);
+      max-height: em(46);
+    }
+  }
+
+  &__calc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: em(300);
+  }
+  &__diagram {
+    position: absolute;
+    // display: none;
+    top: em(-224);
+  }
+}
+
+.calendar-menu {
+  display: none;
+}
+
+.calendar-menu.visible {
+  display: block;
+}
+
+.custom-input {
+  font-size: em(20);
+  padding: em(10) em(30);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  color: $gold;
+}
+
+.ui-datepicker {
+  font-size: em(28);
+  padding: em(10, 30) em(4, 30);
+  background: #170c6d;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: em(5);
+}
+
+.ui-datepicker {
+  a {
+    text-decoration: none;
+    color: $gold;
+    @include Serif400;
+    padding: em(1);
+  }
+  span {
+    text-decoration: none;
+    color: #ffd;
+    @include Serif400;
+    padding: em(1);
+  }
+}
+
+.ui-datepicker-header {
+  background-color: #170c6d;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 10px;
+}
+
+.ui-datepicker-title {
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  cursor: pointer;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  background: #787fe7;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  background: #f2f2f2;
+  color: rgb(142, 142, 142);
+}
+
+.custom-gender {
+  font-size: em(20);
+  padding: em(10) em(30);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  color: $gold;
+  background: $lightBlue;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-gender::-ms-expand {
+  display: none;
+}
+
+.custom-gender {
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+input.custom-input::placeholder {
+  color: $gold;
+  opacity: 1;
+}
+
+.content__card-item-img {
+  position: relative;
+  align-items: center;
+}
+
+.content__card-item-img svg {
+  position: relative;
+  width: em(42);
+  height: em(42);
+  z-index: 2;
+}
+
+.content__card-item-img::before,
+.content__card-item-img::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.content__card-item-img::before {
+  width: 180%;
+  height: 180%;
+  background-color: #5e289778;
+}
+
+.content__card-item-img::after {
+  width: 140%;
+  height: 140%;
+  background-color: #5e2897;
+}
+
+.content__card-title-points .word:not(:last-child)::after {
+  content: "|";
+  margin: 0 5px;
+}

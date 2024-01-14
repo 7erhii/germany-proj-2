@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@mixin Serif400 {
+  font-family: 'Serif PT', sans-serif;
+  font-weight: 400;
+}
+@mixin Serif700 {
+  font-family: 'Serif PT', sans-serif;
+  font-weight: 700;
+}
+
+@mixin OpenSans300 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+@mixin OpenSans400 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+@mixin OpenSans500 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+@mixin OpenSans600 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+@mixin OpenSans700 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+@mixin OpenSans800 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+@mixin OpenSansItalic300 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+@mixin Font900 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+
+@mixin Font700 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+
+@mixin Font400 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+}
+
+@mixin Font300 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+
+

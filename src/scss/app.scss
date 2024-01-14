@@ -1,0 +1,33 @@
+$selectionColor: #23a6d5;
+
+
+$darkBlue: #060C27;
+$lightBlue: #10125F;
+$lightBlueHover: #1c208b;
+$gold: #e0c473;
+$footertext: #3F62B8;
+
+// Core
+@import 'core/mixins';
+@import 'core/reset';
+@import 'core/fonts';
+@import 'core/base';
+
+//Pages
+@import 'parts/mainpage';
+@import 'parts/content';
+
+
+// Parts
+@import 'parts/header';
+@import 'parts/footer';
+
+// Components
+@import 'parts/custom-btn';
+@import 'parts/switcher';
+@import 'parts/calc';
+
+
+
+
+

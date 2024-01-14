@@ -1,0 +1,221 @@
+main.mainpage
+  .mainpage__wrapper
+    header.header
+      .header__menu
+        ul.header__list
+          li.header__item
+            a(href="#")
+              span Home
+          li.header__item
+            a(href="#")
+              span Angebot
+          li.header__item
+            a(href="#")
+              span Kurs
+          li.header__item
+            a(href="#")
+              span Kontakt
+      //- .header__logo
+      //-   span Matrix Energy system
+    section.content
+      .content__form
+        .content__title
+          span Meine Matrix
+        input(type="text" placeholder="Geburtsdatum" id="datepicker").custom-input
+        select.custom-gender
+          option(value="male") Männlich
+          option(value="female") Weiblich
+        .content__form-btn
+          .custom-btn.custom-btn--lagre
+            span Berechnen
+        .content__form-switcher
+          include ../../assets/images/Layer 110.svg
+          span Jahresenergietabelle
+          input(type='checkbox' id='switch' class='switcher')
+          label(for="switch") Toggle
+          span Jahresenergien  <br>anzeigen
+        .content__card
+          .content__card-title
+            .content__card-title-image
+              +image('chakra-name.png')
+            .content__card-item-text
+              .content__card-item-text-title
+                span Gesundheitskarte
+            .content__card-title-points
+              span.word Physik
+              span.word Energie
+              span.word Balance
+
+        .content__card-item
+          .content__card-item-img
+            include ../../assets/images/icon-saha.svg
+          .content__card-item-text
+            .content__card-item-text-title
+              span Sahasrara
+            .content__card-item-text-subtitle
+              span Verbindung zum Höheren. <br> woerer Tell des kootes.
+
+        .content__actions
+          .custom-btn.custom-btn--lagre
+            span Analyse der Matrix
+          .content__actions-icon
+            include ../../assets/images/print-com.svg
+          .custom-btn.custom-btn--lagre
+            span Drucken
+      .content__calc
+        .header__logo
+          span Matrix Energy system
+        .content__spirit
+          +image('Human_Body.png')
+          //- .content__diagram
+          //-   +image('diagram.png')
+
+          .spirit-item.center.yellow
+            span 1
+
+          .spirit-item.second.up.green
+            span 2
+          .spirit-item.second.right.green
+            span 2
+          .spirit-item.second.left.green
+            span 2
+
+
+          .spirit-item.third.right.green
+            span 2
+
+          .spirit-item.line.first.green
+            span 2
+          .spirit-item.line.second.green
+            span 2
+          .spirit-item.line.third.green
+            span 2
+
+          .spirit-item.fourth.right
+            span 2
+          .spirit-item.fourth.left.green
+            span 2
+          .spirit-item.fourth.up.green
+            span 2
+          .spirit-item.fourth.down.green
+            span 2
+          .spirit-item.fourth.ten.green
+            span 2
+          .spirit-item.fourth.twenty.green
+            span 2
+          .spirit-item.fourth.thirty.green
+            span 2
+          .spirit-item.fourth.forty.green
+            span 2
+
+
+          .spirit-item.fifth.right.green
+            span 2
+          .spirit-item.fifth.left.green
+            span 2
+          .spirit-item.fifth.up.green
+            span 2
+          .spirit-item.fifth.down.green
+            span 2
+          .spirit-item.fifth.ten.green
+            span 2
+          .spirit-item.fifth.twenty.green
+            span 2
+          .spirit-item.fifth.thirty.green
+            span 2
+          .spirit-item.fifth.forty.green
+            span 2
+
+          .spirit-item.sixth.right.green
+            span 2
+          .spirit-item.sixth.left.green
+            span 2
+          .spirit-item.sixth.up.green
+            span 3
+          .spirit-item.sixth.down.green
+            span 2
+          .spirit-item.sixth.ten.green
+            span 2
+          .spirit-item.sixth.twenty.green
+            span 2
+          .spirit-item.sixth.thirty.green
+            span 2
+          .spirit-item.sixth.forty.green
+            span 2
+
+          .spirit-item.seventh.five.green
+            span 2
+          .spirit-item.seventh.fifteen.green
+            span 2
+          .spirit-item.seventh.twenty.green
+            span 2
+          .spirit-item.seventh.thirty.green
+            span 2
+          .spirit-item.seventh.fortyfive.green
+            span 2
+          .spirit-item.seventh.fifty.green
+            span 2
+
+          .spirit-item.eighth.center.green
+            span 2
+          .spirit-item.eighth.left.green
+            span 2
+          .spirit-item.eighth.right.green
+            span 2
+
+
+          //- +image
+
+
+    footer.footer
+      .footer__title
+        span FREUE MICH AUF DEINE ANFRAGE
+      .footer__content
+        .footer__about
+          .footer__img
+            +image('photo contact.png')
+            .footer__img-mark
+              +image('contact ausrufezeichen.png')
+          .footer__name
+            span Eugen Stoll
+          .footer__address
+            span Adresse:
+            span In der Au 18 <br> 53547 Hausen (Wied)
+        .footer__form
+          form(action='#' method='post')
+            .input-group
+              input(type='text' name='name' placeholder='Name')
+              input(type='email' name='email' placeholder='E-mail address')
+              textarea(name='message' placeholder='Nachricht')
+          .footer__form-actions
+            .random-numbers
+              span.number1
+              span +
+              span.number2
+            input(type='number' name='number' placeholder='Betrag')
+            button.custom-btn.submit-btn
+              span Senden
+        .footer__contacts
+          .footer__contacts-email
+            .footer__contacts-email-text
+              +image('email icon.png')
+              span E-mail Addresse:
+            .footer__contacts-email-link
+              a(href="mailto:Anfragen@yourmatrixenergy.de")  Anfragen@yourmatrixenergy.de
+          .footer__contacts-text
+            span Ich bin in sozialen Netzwerken <br> unterwegs
+          .footer__contacts-social
+            a(href="").footer__contacts-icon
+              +image('insta icon.png')
+            a(href="").footer__contacts-icon
+              +image('telegram icon.png')
+            a(href="").footer__contacts-icon
+              +image('facebook icon.png')
+            a(href="").footer__contacts-icon
+              +image('youtube icon.png')
+
+      .footer__under
+        .footer__agreement
+          span © 2023 Eugen Stoll | Alle Rechte vorbehalten
+        .footer__extra
+          span Impressum | Datenschutzerklärung
